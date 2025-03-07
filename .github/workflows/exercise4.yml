@@ -21,10 +21,10 @@ jobs:
         with:
           name: codecoverage
           path: coverage
-      - name: build
+      - name: Build
         run: npm run build
       - name: Upload build files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated to v4
         with:
           name: build
           path: build
